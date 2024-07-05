@@ -37,10 +37,35 @@ const users = [
     }
 ]
 // console.log(users[1].email);
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+// Object Destructuring.
+
+const course = {
+    coursename: "JavaScript",
+    price: "999",
+    courseInstructor: "angela yu"
+}
+
+// course.courseInstructor
+
+// const {courseInstructor} = course
+    //    or
+const {courseInstructor: instructor} = course
+
+console.log(instructor);
+
+// JASON API
+
+// {
+//     name: "Gautam Mishra",
+//     coursename: "JavaScript",
+//     price: "free"
+// }
