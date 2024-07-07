@@ -39,4 +39,38 @@ function loginUserMessage(username){
     return username + " just logged in."
 }
 // console.log(loginUserMessage("Gautam"));
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
+
+function calculateCartPrice(...num1){
+    return num1
+}
+
+// ... operator known as spread opeartor and also known as rest operator use for like a cart in e commerce website.
+
+// console.log(calculateCartPrice(2));
+// console.log(calculateCartPrice(200, 400, 500)); // gives output in the form of arrays.
+
+const user = {
+    username: "gautam",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log("username is " + anyobject.username + " and price is " + anyobject.price);
+}
+
+// handleObject(user)
+
+handleObject({
+    username: "mishra",
+    price: 799
+})
+
+const mynewArray = [200,400,100,600]
+
+function returnsecondvalue(getArray){
+    return getArray[2]
+}
+
+// console.log(returnsecondvalue(mynewArray));
+console.log(returnsecondvalue([200,400,100,600]));
